@@ -1,10 +1,4 @@
-"""Validate clinic appointment slots.
 
-A slot is valid when the doctor exists, the time is HH:MM, it falls inside
-clinic hours (09:00-17:00), it starts on a 30-minute boundary, and that doctor
-is not already booked at that time. Exits non-zero if any check fails, which
-is what makes the GitHub Actions run fail.
-"""
 
 import sys
 from datetime import datetime
