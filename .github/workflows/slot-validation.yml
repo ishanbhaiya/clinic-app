@@ -1,0 +1,20 @@
+name: Appointment Slot Validation
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  validate-slots:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Run appointment slot validation
+        run: python validate_slots.py
