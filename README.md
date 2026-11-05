@@ -2,4 +2,3 @@
 
 Manages doctors and patient appointments.
 
-Run with: python3 app.py
